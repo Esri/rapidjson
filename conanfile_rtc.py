@@ -17,6 +17,3 @@ class RapidjsonConan(ConanFile):
 
         # headers
         self.copy("*.h*", src=base + "include", dst=relative + "include")
-
-    def package_id(self):
-        self.info.header_only()
